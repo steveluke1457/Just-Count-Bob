@@ -1,0 +1,98 @@
+:root {
+  --bg: #f5f5f5;
+  --text: #222;
+  --card: #fff;
+  --accent: #4a90e2;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #eee;
+  --card: #1e1e1e;
+  --accent: #90caf9;
+  --shadow: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+header, footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  border: none;
+  background: var(--accent);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px var(--shadow);
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2f76d2;
+}
+
+.counter-card {
+  background: var(--card);
+  box-shadow: 0 2px 8px var(--shadow);
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+}
+
+.counter-controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.counter-controls button {
+  flex: 1;
+  min-width: 70px;
+}
+
+input.name-input {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  width: 100%;
+  text-align: center;
+}
+
+input.name-input:focus {
+  outline: 2px solid var(--accent);
+}
+
+button.delete {
+  background: crimson;
+}
+
+button.delete:hover {
+  background: red;
+}
